@@ -87,6 +87,7 @@ ul li {
 }
 .nav-div:hover {
   background-color: lightgrey;
+  cursor: pointer;
 }
 .nav-div:hover ul {
   display: block;
