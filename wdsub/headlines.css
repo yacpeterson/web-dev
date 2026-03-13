@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+}
+
+#preheader {
+  background-color: white;
+}
+a {
+  color: inherit;
+}
+
+p {
+  margin-top: 0px;
+}
+
+h1 {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid black;
+}
+
+#nav-menu {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: rgb(255,255,255);
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.nav-div {
+  text-align: center;
+  flex-grow: 1;
+  border-radius: 8px;
+  position: relative;
+}
+
+.nav-div a {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0px 15px;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+.nav-div ul {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  background-color: rgb(255,255,255);
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 120%;
+  margin: 0px;
+  width: calc(100% - 10px);
+}
+
+ul li {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.nav-div:hover {
+  background-color: lightgrey;
+}
+
+.nav-div:hover ul {
+  display: block
+}
+
+.nav-div ul li:hover {
+  background-color: lightgrey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#main {
+  margin: 20px 15% 20px 15%;
+  background-color: rgba(210,210,210,0.8);
+  padding: 30px 20px;
+  border-radius: 4px;
+}
+
+#bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#footer {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #254117;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+}
+
+.info {
+  display: flex;
+  float: left;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.less {
+  margin-bottom: 3px;
+}
+
+addy {
+  float: right;
+}
+
+.bar {
+  flex-grow: 0;
+  width: 1px;
+  background-color: white;
+  display: flex;
+}
+
+.image-container {
+  float: right;
+  border: 1px solid black;
+  margin: 0px 0px 10px 10px;
+  border-radius: 3px;
+}
+
+.image-container img {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.image-container p {
+  text-align: center;
+  font-style: italic;
+}
+
+.section-1 {
+  font-size: 20px;
+}
+
+.headline {
+  margin-bottom: 15px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section-2 {
+  font-size: 20px;
+}
+
+.left {
+  float: left !important;
+  border: 1px solid black;
+  margin: 0px 20px 10px 0px !important;
+}
