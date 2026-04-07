@@ -1,12 +1,15 @@
 body {
   margin: 0;
+  display: block;
 }
 
 #preheader {
   background-color: white;
+  position: static;
 }
 a {
   color: inherit;
+  display: inline;
 }
 
 p {
@@ -38,7 +41,7 @@ hr {
   background-color: rgb(255,255,255);
   padding-right: 10px;
   padding-left: 10px;
-  border-radius: 0px 0px 4px 4px;
+  border-bottom: 1px grey solid
 }
 
 .nav-div {
@@ -141,13 +144,14 @@ addy {
   border: 1px solid black;
   margin: 0px 0px 10px 10px;
   border-radius: 3px;
+  background-color: rgba(200,200,200,1);
 }
 
 .image-container img {
   width: 120px;
   height: 120px;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .image-container p {
