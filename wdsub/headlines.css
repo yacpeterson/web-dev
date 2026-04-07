@@ -74,6 +74,9 @@ hr {
 ul li {
   padding-top: 10px;
   padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .nav-div:hover {
