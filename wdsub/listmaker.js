@@ -3,12 +3,12 @@ let add = document.getElementById("add");
 let clear = document.getElementById("clear");
 let list = document.getElementById("list");
 
-function addItem() {
+add.addEventListener("click", () => {
   let newItem = document.createElement("li");
   newItem.innerHTML = "<input type='checkbox'>" + text.value;
   list.append(newItem);
-}
+})
 
-function clearList() {
+clear.addEventListener("click", () => {
   list.innerHTML = "";
-}
+})
