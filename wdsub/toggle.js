@@ -1,17 +1,21 @@
 let darkModeToggle = document.getElementById("dark-mode-toggle");
-let onOffStatus = document.getElementById("on-off-status");
-
 let isLight = true;
 
-function mngMode(event) {
-  if (isLight) document.body.style.backgroundColor = "black";
-  else document.body.style.backgroundColor = "white";
+darkModeToggle.addEventListener("click", () => {
+  if (isLight == true) setLightMode()
+  else setDarkMode()
+});
 
-  if (isLight) document.body.style.color = "white";
-  else document.body.style.color = "black";
+function setLightMode() {
+  document.body.style.backgroundColor = "white";
+  document.body.style.color = "black";
+  darkModeToggle.innerText = "Light Mode";
+  isLight = !isLight;
+}
 
-  if (isLight) onOffStatus.innerText = "Dark Mode";
-  else onOffStatus.innerText = "Light Mode";
-
+function setDarkMode() {
+  document.body.style.backgroundColor = "black";
+  document.body.style.color = "white";
+  darkModeToggle.innerText = "Dark Mode";
   isLight = !isLight;
 }
