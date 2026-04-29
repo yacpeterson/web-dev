@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+#h1-div {
+  background-color: skyblue;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px grey solid;
+}
+
+#item-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#list-div {
+  background-color: lightgrey;
+  display: flex;
+  width: 500px;
+  border-radius: 8px;
+  border: 1px grey solid;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
