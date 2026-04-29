@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Maker</title>
+  <script defer src="listmaker.js"></script>
+  <link rel="stylesheet" href="listmaker.css">
+</head>
+<body>
+  <div id="h1-div">
+    <h1>List Maker</h1>
+  </div>
+
+  <div id="item-div">
+    <label for="text">New Item:</label>
+    <input id="text" type="text">
+    <button id="add" onclick="addItem(event)">Add Item</button>
+    <button id="clear" onclick="clearList(event)">Clear List</button>
+  </div>
+
+  <div id="container">
+    <div id="list-div">
+      <ul id="list">
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
