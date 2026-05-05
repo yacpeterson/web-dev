@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #list-div {
@@ -33,4 +34,47 @@ body {
 h1 {
   text-align: center;
   margin: 0;
+}
+
+#list li {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+#add {
+  background-color: lightgreen;
+  border: 1px green solid;
+  border-radius: 4px;
+}
+#add:hover {
+  background-color: green;
+  color: white
+}
+
+#clear {
+  background-color: #FFCCBB;
+  border: 1px red solid;
+  border-radius: 4px;
+}
+#clear:hover {
+  background-color: red;
+  color: white;
+}
+
+#text {
+  border-radius: 4px;
+  border: 1px grey solid;
+}
+
+#list span {
+  margin-left: 170px;
+}
+
+.checkbox-button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
 }
