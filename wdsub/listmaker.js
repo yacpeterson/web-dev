@@ -10,7 +10,7 @@ let list = document.getElementById("list");
 
 let noItems = true;
 
-if (document.cookie != "") loadContent()
+if (document.cookie != "") loadContent();
 
 add.addEventListener("click", () => addItem());
 
@@ -52,10 +52,9 @@ function uncheckCross(checkbox) {
 
 function saveContent() {
   document.cookie = "content=" + list.innerHTML;
-  console.log(document.cookie);
 }
 
 function loadContent() {
-  cookieArr = document.cookie.split("=")[1];
-  list.innerHTML = cookieArr
+  cookieArr = document.cookie.substring(8);
+  list.innerHTML = cookieArr;
 }
