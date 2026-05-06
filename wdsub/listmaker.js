@@ -55,6 +55,6 @@ function saveContent() {
 }
 
 function loadContent() {
-  cookieArr = encodeURIComponent(document.cookie.substring(8));
+  cookieArr = document.cookie.substring(8);
   list.innerHTML = cookieArr;
 }
