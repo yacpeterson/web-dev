@@ -17,13 +17,12 @@ add.addEventListener("click", () => addItem());
 clear.addEventListener("click", () => {
   list.innerHTML = "<span>No Items</span>";
   noItems = true;
+  saveContent()
 });
 
 document.addEventListener("keydown", (e) => {
   if (e.code == "Enter") addItem();
 });
-
-document.addEventListener("beforeunload", () => saveContent());
 
 function addItem() {
   if (text.value == "") return;
@@ -34,6 +33,7 @@ function addItem() {
   text.value = "";
   text.focus();
   noItems = false;
+  saveContent()
 }
 
 function checkCross(checkbox) {
