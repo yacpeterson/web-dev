@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normal Form Calculator</title>
+</head>
+
+<body>
+  <h1>Normal Form Calculator</h1>
+
+  <div>
+    <p>To use the calculator, enter the number of pure strategies available to Player 1 and Player 2, then press <i>Go</i>.</p>
+  </div>
+
+  <div class="field-container">
+    <label for="player-1-input">Player 1:</label>
+    <input type="number" id="player-1-input" min="1" max="8" value="2">
+
+    <br><br>
+
+    <label for="player-2-input">Player 2:</label>
+    <input type="number" id="player-2-input" min="1" max="8" value="2">
+
+    <br><br>
+
+    <button onclick="enterMatrix()">Go</button>
+  </div>
+
+  <script>
+    function enterMatrix() {
+      // define input values
+      let numP1Strats = document.getElementById("player-1-input").value;
+      let numP2Strats = document.getElementById("player-2-input").value;
+      // send user to matrix page
+      navigation.navigate("matrix.html?numP1Strats=" + numP1Strats + "&numP2Strats=" + numP2Strats);
+    }
+  </script>
+</body>
+
+</html>
